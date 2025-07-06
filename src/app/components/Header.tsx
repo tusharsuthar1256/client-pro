@@ -2,7 +2,7 @@
 
 
 
-import React, { useState, useEffect } from 'react';
+import React, {  useEffect } from 'react';
 import BackgroundCarousel from './BackgroundCarousel';
 
 
@@ -13,11 +13,9 @@ const Header: React.FC = () => {
     'https://images.pexels.com/photos/1117210/pexels-photo-1117210.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop'
   ];
 
-const [_, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % images.length);
     }, 5000); // Change slide every 5 seconds
 
     return () => clearInterval(interval);
