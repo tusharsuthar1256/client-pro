@@ -79,6 +79,7 @@ const Navigation: React.FC = () => {
             ))}
             <Link href="/our-reach">
               <button 
+                onClick={() => setIsOpen(false)}
                 
                 className={`cursor-pointer font-medium transition-colors duration-300 hover:text-teal-500 text-[22px] py-1.5 ${
                   isScrolled ? 'text-gray-700' : 'text-white'
@@ -87,7 +88,9 @@ const Navigation: React.FC = () => {
               </button>
             </Link>
             <Link href="/joinnow">
-              <button className="cursor-pointer font-medium transition-colors py-1.5 px-3.5 bg-gradient-to-r from-blue-600 to-teal-600 text-white rounded-lg hover:from-blue-700 hover:to-teal-700 duration-300 transform hover:scale-101 text-[23px]">
+              <button
+                onClick={() => setIsOpen(false)}
+               className="cursor-pointer font-medium transition-colors py-1.5 px-3.5 bg-gradient-to-r from-blue-600 to-teal-600 text-white rounded-lg hover:from-blue-700 hover:to-teal-700 duration-300 transform hover:scale-101 text-[23px]">
                 Join Now
               </button>
             </Link>
@@ -116,9 +119,21 @@ const Navigation: React.FC = () => {
                   </div>
                 </Link>
               ))}
-              <button className="w-full bg-gradient-to-r from-blue-600 to-teal-600 text-white py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-teal-700 transition-all duration-300 transform hover:scale-105">
+                       <Link href="/our-reach">
+              <button 
+                onClick={() => setIsOpen(false)}
+                 className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition-colors duration-300 mb-4">
+                Global covrage
+              </button>
+            </Link>
+            <Link href='joinnow'>
+              <button
+                onClick={() => setIsOpen(false)}
+              
+              className="w-full bg-gradient-to-r from-blue-600 to-teal-600 text-white py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-teal-700 transition-all duration-300 transform hover:scale-105">
                 Join Now
               </button>
+            </Link>
             </div>
           </div>
         )}
