@@ -7,8 +7,5 @@
   -ms-overflow-style: none;  /* IE/Edge */
   scrollbar-width: 30px;     /* Firefox */
 } 
-.right-scroll::-webkit-scrollbar{
-  width: 2px;
-}
 
 

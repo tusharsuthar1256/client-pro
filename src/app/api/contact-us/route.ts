@@ -1,8 +1,5 @@
-
-
-
-import { NextRequest } from 'next/server';
-import nodemailer from 'nodemailer';
+import { NextRequest } from "next/server";
+import nodemailer from "nodemailer";
 
 export async function POST(req: NextRequest) {
   try {
@@ -10,7 +7,11 @@ export async function POST(req: NextRequest) {
     const { name, email, message } = body;
 
     // Set up transporter
+<<<<<<< HEAD
    const transporter = nodemailer.createTransport({
+=======
+    const transporter = nodemailer.createTransport({
+>>>>>>> c2b0d95 (Updated changes)
       host: "smtp.gmail.com",
       port: 465,
       secure: true,
@@ -19,12 +20,15 @@ export async function POST(req: NextRequest) {
         pass: process.env.GMAIL_PASS,
       },
     });
+<<<<<<< HEAD
 
+=======
+>>>>>>> c2b0d95 (Updated changes)
 
     // Email content
     const mailOptions = {
       from: `"${name}" <${email}>`, // Sender info
-      to: 'tusharsuthar081@gmail.com', // Your receiving email
+      to: "tusharsuthar081@gmail.com", // Your receiving email
       subject: `New Contact Form Submission from ${name} (${email})`,
       html: `
         <h3>New Message from Website Contact Form</h3>
@@ -37,9 +41,15 @@ export async function POST(req: NextRequest) {
     // Send email
     await transporter.sendMail(mailOptions);
 
-    return Response.json({ success: true, message: 'Email sent successfully!' });
+    return Response.json({
+      success: true,
+      message: "Email sent successfully!",
+    });
   } catch (error) {
-    console.error('Email send error:', error);
-    return Response.json({ success: false, message: 'Failed to send email.' }, { status: 500 });
+    console.error("Email send error:", error);
+    return Response.json(
+      { success: false, message: "Failed to send email." },
+      { status: 500 }
+    );
   }
 }

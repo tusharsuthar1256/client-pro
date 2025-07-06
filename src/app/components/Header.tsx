@@ -1,36 +1,46 @@
-'use client'
+'use client';
 
+<<<<<<< HEAD
 import React from 'react';
 
+=======
+import React, { useState, useEffect } from 'react';
+import BackgroundCarousel from './BackgroundCarousel';
+>>>>>>> c2b0d95 (Updated changes)
 
 const Header: React.FC = () => {
+  const images = [
+    'https://images.pexels.com/photos/906982/pexels-photo-906982.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
+    'https://images.pexels.com/photos/3825569/pexels-photo-3825569.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
+    'https://images.pexels.com/photos/1117210/pexels-photo-1117210.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop'
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % images.length);
+    }, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [images.length]);
+
   return (
-    <header className="relative min-h-[100vh] bg-gradient-to-br  from-blue-900 via-blue-800 to-teal-700 overflow-hidden flex justify-center items-center">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center opacity-20"
-        style={{
-          backgroundImage: 'url(https://images.pexels.com/photos/906982/pexels-photo-906982.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop)'
-        }}
-      />
+    <header className="relative min-h-[100vh] overflow-hidden flex justify-center items-center">
+      {/* Background Carousel */}
       
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-teal-800/80" />
-      
+<BackgroundCarousel/>
+
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 h-full flex flex-col justify-center items-center text-center text-white">
         <div className="flex items-center gap-3 mb-6">
-                      {/* <img src="/logo.png" alt="Logo" className="w-30 h-14" /> */}
-
-          <h1 className="text-4xl md:text-6xl font-bold">
-            Diagnohealth Pathlab
-          </h1>
+          <h1 className="text-4xl md:text-6xl font-bold">Diagnohealth Pathlab</h1>
         </div>
-        
+
         <p className="text-xl md:text-2xl mb-8 max-w-3xl leading-relaxed">
           Comprehensive Drug & Alcohol Testing Services for the Maritime Industry
         </p>
-        
+
         <div className="flex flex-col sm:flex-row gap-4">
           <button className="bg-teal-500 hover:bg-teal-400 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
             Get Started Today

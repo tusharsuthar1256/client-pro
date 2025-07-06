@@ -45,11 +45,15 @@ const AboutUs: React.FC = () => {
           </div>
 
           <div className="relative">
+<<<<<<< HEAD
             <Image
+=======
+            {/* <Image
+>>>>>>> c2b0d95 (Updated changes)
               src="https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
               alt="Laboratory testing"
               className="rounded-lg shadow-lg w-full h-96 object-cover"
-            />
+            /> */}
             <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent rounded-lg"></div>
           </div>
         </div>

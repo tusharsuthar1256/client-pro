@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import BackgroundCarousel from '../components/BackgroundCarousel';
 
 const JoinNowPage = () => {
   const [formData, setFormData] = useState({
@@ -46,14 +47,8 @@ const JoinNowPage = () => {
   };
 
   return (
-    <div className="relative min-h-[100vh] bg-gradient-to-br from-blue-900 via-blue-800 to-teal-700 overflow-hidden flex justify-center items-center py-10 pt-23 px-4">
-      <div
-        className="absolute inset-0 bg-cover bg-center opacity-20"
-        style={{
-          backgroundImage:
-            'url(https://images.pexels.com/photos/906982/pexels-photo-906982.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop)',
-        }}
-      />
+    <div className="relative min-h-[100vh] overflow-hidden flex justify-center items-center py-10 pt-23 px-4">
+     <BackgroundCarousel/>
       <div className="relative bg-white shadow-lg rounded-xl p-8 w-full max-w-md z-10">
         <h2 className="text-2xl font-bold mb-6 text-center text-blue-700">Join Now</h2>
 
