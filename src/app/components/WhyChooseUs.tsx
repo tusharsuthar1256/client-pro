@@ -67,13 +67,13 @@ const WhyChooseUs: React.FC = () => {
               </div>
             </div>
             <div className="text-center">
-              <Image
+              {/* <Image
                 src="https://images.pexels.com/photos/3862634/pexels-photo-3862634.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
                 alt="Professional consultation"
                 width={80}
                 height={64}
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
-              />
+              /> */}
             </div>
           </div>
         </div>

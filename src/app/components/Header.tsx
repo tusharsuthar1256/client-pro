@@ -1,12 +1,10 @@
 'use client';
 
-<<<<<<< HEAD
-import React from 'react';
 
-=======
+
 import React, { useState, useEffect } from 'react';
 import BackgroundCarousel from './BackgroundCarousel';
->>>>>>> c2b0d95 (Updated changes)
+
 
 const Header: React.FC = () => {
   const images = [
