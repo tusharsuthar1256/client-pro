@@ -7,11 +7,8 @@ export async function POST(req: NextRequest) {
     const { name, email, message } = body;
 
     // Set up transporter
-<<<<<<< HEAD
-   const transporter = nodemailer.createTransport({
-=======
+
     const transporter = nodemailer.createTransport({
->>>>>>> c2b0d95 (Updated changes)
       host: "smtp.gmail.com",
       port: 465,
       secure: true,
@@ -20,10 +17,7 @@ export async function POST(req: NextRequest) {
         pass: process.env.GMAIL_PASS,
       },
     });
-<<<<<<< HEAD
 
-=======
->>>>>>> c2b0d95 (Updated changes)
 
     // Email content
     const mailOptions = {

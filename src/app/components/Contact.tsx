@@ -56,64 +56,77 @@ const Contact: React.FC = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Information */}
-          <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-8">Contact Information</h3>
-            
-            <div className="space-y-6">
-              <div className="flex items-start">
-                <div className="bg-gradient-to-br from-blue-500 to-teal-500 p-3 rounded-lg mr-4">
-                  <Mail className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
-                  <p className="text-gray-600">operationsdiagnohealth@gmail.com</p>
-                </div>
-              </div>
+       {/* Contact Information */}
+<div>
+  <h3 className="text-2xl font-bold text-gray-900 mb-8">Contact Information</h3>
 
-              <div className="flex items-start">
-                <div className="bg-gradient-to-br from-blue-500 to-teal-500 p-3 rounded-lg mr-4">
-                  <Phone className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
-                  <p className="text-gray-600">+91 82912 92085</p>
-                </div>
-              </div>
+  <div className="space-y-6">
+    {/* Email */}
+    <div className="flex items-start">
+      <div className="bg-gradient-to-br from-blue-500 to-teal-500 p-3 rounded-lg mr-4">
+        <Mail className="w-6 h-6 text-white" />
+      </div>
+      <div>
+        <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
+        <p className="text-gray-600">operationsdiagnohealth@gmail.com</p>
+        <p className="text-gray-600">davidpedrodavid40@gmail.com</p>
+        <p className="text-gray-600">collectorsdiagnohealth@gmail.com</p>
+      </div>
+    </div>
 
-              <div className="flex items-start">
-                <div className="bg-gradient-to-br from-blue-500 to-teal-500 p-3 rounded-lg mr-4">
-                  <MapPin className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Address</h4>
-                  <p className="text-gray-600">
-                    123 Maritime Plaza<br />
-                    Mumbai, Maharashtra 400001<br />
-                    India
-                  </p>
-                </div>
-              </div>
-            </div>
+    {/* Phone */}
+    <div className="flex items-start">
+      <div className="bg-gradient-to-br from-blue-500 to-teal-500 p-3 rounded-lg mr-4">
+        <Phone className="w-6 h-6 text-white" />
+      </div>
+      <div>
+        <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
+        <p className="text-gray-600">
+          <a href="tel:+918291292085" className="hover:underline text-blue-600">+91 82912 92085</a>
+        </p>
+        <p className="text-gray-600">
+          <a href="tel:+919082622303" className="hover:underline text-blue-600">+91 90826 22303</a>
+        </p>
+        <p className="text-gray-600">
+          <a href="tel:+919082622362" className="hover:underline text-blue-600">+91 90826 22362</a>
+        </p>
+      </div>
+    </div>
 
-            <div className="mt-8 p-6 bg-gradient-to-br from-blue-50 to-teal-50 rounded-xl">
-              <h4 className="font-bold text-gray-900 mb-3">Business Hours</h4>
-              <div className="space-y-2 text-gray-600">
-                <div className="flex justify-between">
-                  <span>Monday - Friday:</span>
-                  <span>9:00 AM - 6:00 PM IST</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Saturday:</span>
-                  <span>9:00 AM - 2:00 PM IST</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Sunday:</span>
-                  <span>Emergency Services Only</span>
-                </div>
-              </div>
-            </div>
-          </div>
+    {/* Address */}
+    <div className="flex items-start">
+      <div className="bg-gradient-to-br from-blue-500 to-teal-500 p-3 rounded-lg mr-4">
+        <MapPin className="w-6 h-6 text-white" />
+      </div>
+      <div>
+        <h4 className="font-semibold text-gray-900 mb-1">Address</h4>
+        <p className="text-gray-600">
+             plot No.179, Shop No.14,<br/> Proviso Heights, Sector 17, Ulwe, Navi Mumbai, Maharashtra 410206
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {/* Business Hours */}
+  <div className="mt-8 p-6 bg-gradient-to-br from-blue-50 to-teal-50 rounded-xl">
+    <h4 className="font-bold text-gray-900 mb-3">Business Hours</h4>
+    <div className="space-y-2 text-gray-600">
+      <div className="flex justify-between">
+        <span>Monday - Friday:</span>
+        <span>9:00 AM - 6:00 PM IST</span>
+      </div>
+      <div className="flex justify-between">
+        <span>Saturday:</span>
+        <span>9:00 AM - 2:00 PM IST</span>
+      </div>
+      <div className="flex justify-between">
+        <span>Sunday:</span>
+        <span>Emergency Services Only</span>
+      </div>
+    </div>
+  </div>
+</div>
+
 
           {/* Contact Form */}
           <div>

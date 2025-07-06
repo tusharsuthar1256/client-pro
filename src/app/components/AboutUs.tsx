@@ -15,15 +15,17 @@ const AboutUs: React.FC = () => {
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="prose prose-lg text-gray-700">
-              <p className="mb-6">
-                Diagnohealth Pathlab is an India-based company with ISO 9001:2015 and ISO QMS-certified testing laboratories. 
-                We specialize in providing comprehensive Drug & Alcohol Testing Services for the maritime industry, with coverage across major ports globally.
-              </p>
-              <p className="mb-6">
-                We offer cost-effective, fixed-price packages, delivering reliable services that ensure compliance with international regulations.
-              </p>
-            </div>
+            <div className="prose prose-lg text-gray-700 text-justify">
+  <p className="mb-6">
+    DiagnoHealth Path Lab is a globally recognized and India-registered laboratory, specializing in drug and alcohol testing services for the marine industry. 
+    Our services are aligned with international maritime standards and are available across major global ports.
+  </p>
+  <p className="mb-6">
+    We follow testing protocols based on the principles of NIDA (National Institute on Drug Abuse, USA) and US-SAMHSA (Substance Abuse and Mental Health Services Administration), 
+    and are certified under ISO 9001:2015 and ISO 14001:2015, ensuring reliable, safe, and compliant testing solutions worldwide.
+  </p>
+</div>
+
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8">
               <div className="text-center">
@@ -46,7 +48,14 @@ const AboutUs: React.FC = () => {
 
           <div className="relative">
 
-         
+            <div className="relative w-full h-96"> 
+      <Image
+        src="https://images.pexels.com/photos/3825569/pexels-photo-3825569.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+        alt="Example"
+        fill 
+        className="object-cover rounded-2xl" 
+      />
+    </div>
             <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent rounded-lg"></div>
           </div>
         </div>
