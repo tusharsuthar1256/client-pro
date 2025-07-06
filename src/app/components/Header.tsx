@@ -13,7 +13,7 @@ const Header: React.FC = () => {
     'https://images.pexels.com/photos/1117210/pexels-photo-1117210.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop'
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+const [_, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {

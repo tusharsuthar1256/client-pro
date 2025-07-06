@@ -29,9 +29,10 @@ const Services: React.FC = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
           <div className="w-24 h-1 bg-teal-500 mx-auto mb-8"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive testing services tailored to the maritime industry's unique needs.
-          </p>
+       <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+  Comprehensive testing services tailored to the maritime industry&apos;s unique needs.
+</p>
+
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
