@@ -30,10 +30,10 @@ const Header: React.FC = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 h-full flex flex-col justify-center items-center text-center text-white">
         <div className="flex items-center gap-3 mb-6">
-          <h1 className="text-4xl md:text-6xl font-bold">Diagnohealth Pathlab</h1>
+          <h1 className="text-3xl md:text-6xl font-bold">DIAGNOHEALTH PATH LAB</h1>
         </div>
 
-        <p className="text-xl md:text-2xl mb-8 max-w-3xl leading-relaxed">
+        <p className="text-xl md:text-1xl mb-8 max-w-3xl leading-relaxed">
           Comprehensive Drug & Alcohol Testing Services for the Maritime Industry
         </p>
 

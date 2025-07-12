@@ -6,7 +6,9 @@ import BackgroundCarousel from '../components/BackgroundCarousel';
 const JoinNowPage = () => {
   const [formData, setFormData] = useState({
     name: '',
+    designation: '',
     email: '',
+    company: '',
     message: '',
   });
 
@@ -24,7 +26,7 @@ const JoinNowPage = () => {
     setStatus('Sending...');
 
     try {
-      const res = await fetch('/api/join-now', {
+      const res = await fetch('/api/partner-with-us', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -36,7 +38,7 @@ const JoinNowPage = () => {
 
       if (res.ok) {
         setStatus('Email sent successfully!');
-        setFormData({ name: '', email: '', message: '' });
+        setFormData({ name: '', designation: '', email: '', company: '', message: '' });
       } else {
         setStatus(result.message || 'Failed to send email.');
       }
@@ -48,47 +50,72 @@ const JoinNowPage = () => {
 
   return (
     <div className="relative min-h-[100vh] overflow-hidden flex justify-center items-center py-10 pt-23 px-4">
-     <BackgroundCarousel/>
+      <BackgroundCarousel />
       <div className="relative bg-white shadow-lg rounded-xl p-8 w-full max-w-md z-10">
         <h2 className="text-2xl font-bold mb-6 text-center text-blue-700">Join Now</h2>
 
         <form className="space-y-4 text-gray-900" onSubmit={handleSubmit}>
           <div>
-            <label className="block text-sm font-medium text-gray-700">Name</label>
+            <label className="block text-sm font-medium text-gray-700">Full Name</label>
             <input
               type="text"
               name="name"
               value={formData.name}
               onChange={handleChange}
-              placeholder="Your Name"
-              className="mt-1 w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              placeholder="Your Full Name"
               required
+              className="mt-1 w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700">Email</label>
+            <label className="block text-sm font-medium text-gray-700">Designation</label>
+            <input
+              type="text"
+              name="designation"
+              value={formData.designation}
+              onChange={handleChange}
+              placeholder="e.g. Lab Manager, Procurement Head, Owner"
+              required
+              className="mt-1 w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700">Email Address</label>
             <input
               type="email"
               name="email"
               value={formData.email}
               onChange={handleChange}
               placeholder="you@example.com"
-              className="mt-1 w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
               required
+              className="mt-1 w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700">Description</label>
+            <label className="block text-sm font-medium text-gray-700">Company / Laboratory Name</label>
+            <input
+              type="text"
+              name="company"
+              value={formData.company}
+              onChange={handleChange}
+              placeholder="Your Company or Lab Name"
+              required
+              className="mt-1 w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700">Message / Description</label>
             <textarea
               name="message"
               value={formData.message}
               onChange={handleChange}
               placeholder="Tell us why you want to join..."
-              className="mt-1 w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
               rows={4}
-              required
+              className="mt-1 w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
           </div>
 

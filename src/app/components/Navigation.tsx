@@ -60,7 +60,7 @@ const Navigation: React.FC = () => {
           <Link href="/">
             <div className="flex items-center gap-2 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
               <Image src="/logo.png" alt="Logo" width={72} height={32} className="w-18 h-8" />
-              <span className={`text-xl font-bold ${isScrolled ? 'text-blue-900' : 'text-white'}`}>Diagnohealth</span>
+              <span className={`text-xl font-bold ${isScrolled ? 'text-blue-900' : 'text-white'}`}>DIAGNOHEALTH</span>
             </div>
           </Link>
 
@@ -87,7 +87,7 @@ const Navigation: React.FC = () => {
                 Global covrage
               </button>
             </Link>
-            <Link href="/joinnow">
+            <Link href="/Partner-with-us">
               <button
                 onClick={() => setIsOpen(false)}
                className="cursor-pointer font-medium transition-colors py-1.5 px-3.5 bg-gradient-to-r from-blue-600 to-teal-600 text-white rounded-lg hover:from-blue-700 hover:to-teal-700 duration-300 transform hover:scale-101 text-[23px]">
@@ -126,7 +126,7 @@ const Navigation: React.FC = () => {
                 Global covrage
               </button>
             </Link>
-            <Link href='joinnow'>
+            <Link href='Partner-with-us'>
               <button
                 onClick={() => setIsOpen(false)}
               

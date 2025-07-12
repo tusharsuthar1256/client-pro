@@ -7,12 +7,14 @@ import Team from './components/Team';
 import Clients from './components/Clients';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Certified from './components/Certified';
 
 function App() {
   return (
     <div className="min-h-screen">
       <Header />
       <AboutUs />
+      <Certified/>
       <Services />
       <WhyChooseUs />
       <Team />
