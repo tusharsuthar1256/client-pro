@@ -16,20 +16,23 @@ const Team: React.FC = () => {
   const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
 
   const medicalTeam: TeamMember[] = [
-    {
-      name: 'Mr. Gajanan Telang',
-      qualification: 'Bachelor of Pharmacy',
-      role: 'Laboratory Manager – Quality Manager',
-    },
-    {
-      name: 'Ms. Vaishali Telang',
-      qualification: 'Diploma in Medical Laboratory Technology\nB.Sc. in Biological Sample Profiling & Clinical',
-      role: 'DNA Analysis Specialist',
-    },
-    {
-      name: 'Ms. Amau Sange',
-      qualification: 'B.Sc. in Medical Laboratory Technology',
-      role: 'Operational Testing Coordinator & Multidisciplinary Lab Specialist',
+     {
+      name: 'Dr. K. Vaishnav',
+      qualification: 'Bachelor of Medicine\nBachelor of Surgery (MBBS)',
+      role: 'Emergency Physician | Occupational Health Consultant | Drug Testing & Toxicology Specialist',
+      summary:
+        'Dr. Karan Vaishnav is a skilled medical practitioner with a strong background in emergency medicine, industrial health, and clinical coordination. His expertise includes drug analysis, alcohol testing, and toxicology screening, with a focus on maintaining safety and compliance within the marine and offshore sectors.',
+      expertise: [
+        'Drug & Alcohol Testing Oversight',
+        'Clinical Toxicology & Drug Analysis',
+        'Occupational & Industrial Health Care',
+        'Emergency Response & Medical Coordination',
+        'Crew Medical Fitness Certification',
+        'Seafarer Health Screening & Compliance',
+        'Medical Reporting & Risk Assessment',
+      ],
+      teamRole:
+        'Dr. Karan Vaishnav plays a key role in reviewing drug and alcohol test reports, conducting crew fitness assessments, and managing post-incident medical evaluations.',
     },
     {
       name: 'Dr. A. R. Shinde',
@@ -52,23 +55,22 @@ const Team: React.FC = () => {
         'As a lead medical reviewer, Dr. Shinde ensures all clinical evaluations related to drug and alcohol testing are precise, confidential, and in accordance with maritime safety laws (IMO, SOLAS, ISPS).',
     },
     {
-      name: 'Dr. K. Vaishnav',
-      qualification: 'Bachelor of Medicine\nBachelor of Surgery (MBBS)',
-      role: 'Emergency Physician | Occupational Health Consultant | Drug Testing & Toxicology Specialist',
-      summary:
-        'Dr. Karan Vaishnav is a skilled medical practitioner with a strong background in emergency medicine, industrial health, and clinical coordination. His expertise includes drug analysis, alcohol testing, and toxicology screening, with a focus on maintaining safety and compliance within the marine and offshore sectors.',
-      expertise: [
-        'Drug & Alcohol Testing Oversight',
-        'Clinical Toxicology & Drug Analysis',
-        'Occupational & Industrial Health Care',
-        'Emergency Response & Medical Coordination',
-        'Crew Medical Fitness Certification',
-        'Seafarer Health Screening & Compliance',
-        'Medical Reporting & Risk Assessment',
-      ],
-      teamRole:
-        'Dr. Karan Vaishnav plays a key role in reviewing drug and alcohol test reports, conducting crew fitness assessments, and managing post-incident medical evaluations.',
+      name: 'Mr. Gajanan Telang',
+      qualification: 'Bachelor of Pharmacy',
+      role: 'Laboratory Manager – Quality Manager',
     },
+    {
+      name: 'Ms. Vaishali Telang',
+      qualification: 'Diploma in Medical Laboratory Technology\nB.Sc. in Biological Sample Profiling & Clinical',
+      role: 'DNA Analysis Specialist',
+    },
+    {
+      name: 'Ms. Amau Sange',
+      qualification: 'B.Sc. in Medical Laboratory Technology',
+      role: 'Operational Testing Coordinator & Multidisciplinary Lab Specialist',
+    },
+    
+   
   ];
 
   const operationalTeam: TeamMember[] = [
