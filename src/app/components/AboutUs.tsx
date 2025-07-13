@@ -50,7 +50,7 @@ const AboutUs: React.FC = () => {
 
             <div className="relative w-full h-96"> 
       <Image
-        src="/aboutImg.png"
+        src="/aboutImg.jpg"
         alt="Example"
         fill 
         className="object-cover rounded-2xl" 
