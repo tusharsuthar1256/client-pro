@@ -84,7 +84,7 @@ const Navigation: React.FC = () => {
                 className={`cursor-pointer font-medium transition-colors duration-300 hover:text-teal-500 text-[22px] py-1.5 ${
                   isScrolled ? 'text-gray-700' : 'text-white'
                 }`}>
-                Global covrage
+                global coverage
               </button>
             </Link>
             <Link href="/Partner-with-us">
@@ -123,7 +123,7 @@ const Navigation: React.FC = () => {
               <button 
                 onClick={() => setIsOpen(false)}
                  className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition-colors duration-300 mb-4">
-                Global covrage
+                global coverage
               </button>
             </Link>
             <Link href='Partner-with-us'>
