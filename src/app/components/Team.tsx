@@ -60,7 +60,7 @@ const Team: React.FC = () => {
       role: 'Laboratory Manager – Quality Manager',
     },
     {
-      name: 'Ms. Vaishali Telang',
+      name: 'Ms. Vaishali Lashkare ',
       qualification: 'Diploma in Medical Laboratory Technology\nB.Sc. in Biological Sample Profiling & Clinical',
       role: 'DNA Analysis Specialist',
     },
