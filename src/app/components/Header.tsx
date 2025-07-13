@@ -2,26 +2,15 @@
 
 
 
-import React, {  useEffect } from 'react';
+import React from 'react';
 import BackgroundCarousel from './BackgroundCarousel';
 
 
 const Header: React.FC = () => {
-  const images = [
-    'https://images.pexels.com/photos/906982/pexels-photo-906982.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
-
-    
-    'https://images.pexels.com/photos/1117210/pexels-photo-1117210.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
-    '/aboutImg.png'
-  ];
 
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-    }, 5000); // Change slide every 5 seconds
 
-    return () => clearInterval(interval);
-  }, [images.length]);
+
 
   return (
     <header className="relative min-h-[100vh] overflow-hidden flex justify-center items-center">

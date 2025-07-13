@@ -5,8 +5,7 @@ import React, { useEffect, useState } from 'react';
 const images = [
   'https://images.pexels.com/photos/906982/pexels-photo-906982.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
   'https://images.pexels.com/photos/14797864/pexels-photo-14797864.jpeg',
-  'https://images.pexels.com/photos/1117210/pexels-photo-1117210.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
-  
+  'https://images.pexels.com/photos/799091/pexels-photo-799091.jpeg'
 ];
 
 const BackgroundCarousel: React.FC = () => {
