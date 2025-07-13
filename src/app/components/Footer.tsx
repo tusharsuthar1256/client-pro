@@ -1,7 +1,8 @@
 'use client';
 
 import React from 'react';
-import { Anchor, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Anchor, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, Icon } from 'lucide-react';
+import Link from 'next/link';
 
 const Footer: React.FC = () => {
   return (
@@ -13,17 +14,18 @@ const Footer: React.FC = () => {
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <Anchor className="w-6 h-6 text-teal-400" />
-              <span className="text-lg font-bold">Diagnohealth Pathlab</span>
+              <span className="text-lg font-bold">DiagnoHealth Path Lab</span>
             </div>
             <p className="text-gray-300 mb-4 text-sm leading-relaxed break-words">
               India-registered lab offering certified Drug & Alcohol Testing for the maritime sector across global ports.
             </p>
             <div className="flex flex-wrap gap-3">
-              {[Facebook, Twitter, Linkedin, Instagram].map((Icon, i) => (
-                <button key={i} className="bg-gray-800 hover:bg-teal-600 p-2 rounded-lg transition-colors duration-300">
-                  <Icon className="w-4 h-4" />
+              <Link href='https://www.linkedin.com/in/satyajeet-ghole-2a1bbaa7/'>
+                <button className="bg-gray-800 hover:bg-teal-600 p-2 rounded-lg transition-colors duration-300">
+                  <Linkedin className="w-4 h-4" />
                 </button>
-              ))}
+              </Link>
+              
             </div>
           </div>
 
