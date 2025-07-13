@@ -54,36 +54,7 @@ const WhyChooseUs: React.FC = () => {
           ))}
         </div>
 
-        {/* CTA Section */}
-        <div className="mt-16 bg-white/80 backdrop-blur-xl rounded-2xl shadow-xl p-8 md:p-12">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h3 className="text-3xl font-bold text-gray-900 mb-6">Ready to Get Started?</h3>
-              <p className="text-gray-700 mb-6">
-                Join hundreds of maritime companies who trust us with their testing needs. Contact us today for a
-                personalized quote and consultation.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-gradient-to-r from-blue-600 to-teal-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-teal-700 transition-all duration-300">
-                  Get Free Quote
-                </button>
-            
-              </div>
-            </div>
-            <div className="text-center">
-              {/* Optional image */}
-           
-                   <div className="relative w-full h-56"> 
-                    <Image
-                      src="https://images.pexels.com/photos/3862634/pexels-photo-3862634.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
-                alt="Consultation"
-                      fill 
-                      className="object-cover rounded-2xl" 
-                    />
-                  </div>
-            </div>
-          </div>
-        </div>
+      
       </div>
     </section>
   );

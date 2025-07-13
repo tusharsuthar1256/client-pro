@@ -15,6 +15,10 @@ const certifiedLogos = [
     alt: 'ISO/IEC 17025:2017',
     src: '/ISO3.png', 
   },
+  {
+    alt: 'NDASA',
+    src: '/ISO4.png', 
+  },
 
 
 ];

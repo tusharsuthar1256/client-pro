@@ -147,7 +147,7 @@ const Team: React.FC = () => {
   );
 
   return (
-    <section id="team" className="py-20 bg-gray-50 relative">
+    <section id="team" className="pt-10 pb-5 bg-gray-50 relative">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-2">Meet Our Team</h2>
