@@ -201,7 +201,7 @@ const Team: React.FC = () => {
 
               {selectedMember.teamRole && (
                 <>
-                  <h3 className="text-xl font-semibold mt-6 text-gray-700">Role in the Team:</h3>
+                  <h3 className="text-xl font-semibold mt-6 text-gray-700">Anchor Thought:</h3>
                   <p className="text-sm text-gray-600 mt-2 whitespace-pre-line">{selectedMember.teamRole}</p>
                 </>
               )}

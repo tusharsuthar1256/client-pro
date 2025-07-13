@@ -36,7 +36,7 @@ const Clients: React.FC = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Link href='/partner-with-us'>
+          <Link href='/Partner-with-us'>
           <button className="bg-gradient-to-r from-blue-600 to-teal-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-teal-700 transition-all duration-300 transform hover:scale-105">
             Join Our Client Network
           </button>
