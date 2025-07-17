@@ -6,7 +6,6 @@ import React from 'react';
 const Clients: React.FC = () => {
   const clientNames = [
     'Viswa Group',
-    'DNAlogy',
     'Josh Teck Marine',
     'ETC...',
     

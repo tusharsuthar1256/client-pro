@@ -55,7 +55,7 @@ const Team: React.FC = () => {
         'As a lead medical reviewer, Dr. Shinde ensures all clinical evaluations related to drug and alcohol testing are precise, confidential, and in accordance with maritime safety laws (IMO, SOLAS, ISPS).',
     },
     {
-      name: 'Mr. Gajanan Telang',
+      name: 'Mr. G. Telan',
       qualification: 'Bachelor of Pharmacy',
       role: 'Laboratory Manager – Quality Manager',
     },
@@ -90,7 +90,7 @@ const Team: React.FC = () => {
       summary:
         'An IT engineering professional with a strong foundation in operations management, Satyajeet has 7+ years of experience leading backend processes, logistics coordination, and compliance workflows for global laboratories. His expertise ensures seamless execution of drug and alcohol testing programs, timely project delivery, and the development of reliable global manpower networks — all while maintaining the highest standards of maritime safety and operational excellence.',
       teamRole:
-        '“In the maritime industry, the clock follows the ship — safety and service always come first.”',
+        '“Time zones dont slow us down - they challenge us to be faster.”',
     },
     {
       name: 'Mr. Vincenzo',
