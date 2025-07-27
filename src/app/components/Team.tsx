@@ -17,6 +17,27 @@ const Team: React.FC = () => {
 
   const medicalTeam: TeamMember[] = [
      {
+      name: 'Dr. Santosh D. Kale',
+      qualification: 'Bachelor of Medicine\nBachelor of Surgery (MBBS)',
+      role: 'MD – Pharmacology | General Physician | DG Shipping Approved Medical Examiner | Drug & Alcohol Testing Specialist',
+      summary:
+        'Dr. Santosh D. Kale is a seasoned General Physician with over 25 years of clinical experience in preventive, diagnostic, and therapeutic care. He is known for his patient-centered approach and a strong foundation in pharmacological science, enabling safe and effective treatment planning. \n\n     Dr. Kale is DG Shipping-approved and actively conducts pre-medical examinations for seafarers and crew members, ensuring compliance with maritime health standards. His well-rounded medical practice blends clinical expertise with in-depth knowledge of drug safety, toxicology, and long-term care strategies.',
+   expertise: [
+  'General Health Check-ups',
+  'Fever & Infection Management',
+  'Diabetes & Hypertension Care',
+  'Clinical Pharmacology & Drug Advisory',
+  'Allergy Testing & Immuno Health',
+  'Preventive Health & Lifestyle Monitoring',
+  'Pre-Medical Examinations for Seafarers & Crew (DG Shipping Approved)',
+  'Drug & Alcohol Testing and Compliance Oversight',
+  'Long-Term Medication & Chronic Disease Management',
+  'Stress Management Counselling',
+],
+      teamRole:
+        'Dr. Santosh D. Kale plays a pivotal role in guiding patients through chronic and acute health challenges with personalized care plans, backed by pharmacological insights and decades of hands-on experience.',
+    },
+     {
       name: 'Dr. K. Vaishnav',
       qualification: 'Bachelor of Medicine\nBachelor of Surgery (MBBS)',
       role: 'Emergency Physician | Occupational Health Consultant | Drug Testing & Toxicology Specialist',
