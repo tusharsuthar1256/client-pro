@@ -17,8 +17,9 @@ export async function POST(req: NextRequest) {
     });
 
     const mailOptions = {
-      from: `"${name}" <${email}>`,
+      from: `"${name}" <${process.env.GMAIL_USER}>`, // safer sender
       to: 'tusharsuthar081@gmail.com',
+      replyTo: email, // allows you to reply to user
       subject: `${name} wants to join (Designation: ${designation})`,
       html: `
         <h2>Join Now Submission</h2>
