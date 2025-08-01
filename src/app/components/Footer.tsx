@@ -95,11 +95,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 mt-10 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
             <p>© 2024 Diagnohealth Pathlab. All rights reserved.</p>
-            <div className="flex flex-wrap gap-4 justify-center md:justify-end">
-              <a href="#privacy" className="hover:text-teal-400">Privacy Policy</a>
-              <a href="#terms" className="hover:text-teal-400">Terms & Conditions</a>
-              <a href="#sitemap" className="hover:text-teal-400">Sitemap</a>
-            </div>
+            
           </div>
         </div>
       </div>
