@@ -21,13 +21,17 @@ const BackgroundCarousel: React.FC = () => {
   return (
     <div className="fixed top-0 left-0 w-full h-full -z-10 overflow-hidden">
       {images.map((img, index) => (
-        <div
-          key={index}
-          className={`absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out pointer-events-none
-            ${index === currentIndex ? 'opacity-20 z-10' : 'opacity-0 z-0'}
-          `}
-          style={{ backgroundImage: `url(${img})` }}
-        />
+      <div
+  key={index}
+  className={`absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out pointer-events-none
+    ${index === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'} 
+  `}
+  style={{ backgroundImage: `url(${img})` }}
+>
+  {/* Overlay tint */}
+  <div className="absolute inset-0 bg-black/60 dark:bg-black/40" />
+</div>
+
       ))}
     </div>
   );
